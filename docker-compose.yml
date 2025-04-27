@@ -18,7 +18,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/mydb
+      SPRING_DATASOURCE_URL: jdbc:postgresql://spring-boot-postsql:5432/mydb
       SPRING_DATASOURCE_USERNAME: myuser
       SPRING_DATASOURCE_PASSWORD: mypass
     entrypoint: ["sh", "-c", "sleep 10 && java -jar /app.jar"]
