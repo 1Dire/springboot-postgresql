@@ -1,9 +1,16 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/mydb
+    url: jdbc:postgresql://springboot-docker:5432/mydb
     username: myuser
     password: mypass
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  # ?? ? timezone ??
+  jackson:
+    time-zone: Asia/Seoul

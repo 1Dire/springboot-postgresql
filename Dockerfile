@@ -1,5 +1,5 @@
 FROM openjdk:17-jdk-slim
 VOLUME /tmp
-ARG JAR_FILE=build/libs/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+# JAR 파일 이름을 고정
+COPY build/libs/springboot-postgresql-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
