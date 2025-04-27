@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://spring-boot-postsql:5432/mydb  # 'spring-boot-postgresql' 대신 'db'로 변경
+    url: jdbc:postgresql://postgres:5432/mydb  # 'localhost' 대신 'postgres'로 변경
     username: myuser
     password: mypass
     driver-class-name: org.postgresql.Driver
