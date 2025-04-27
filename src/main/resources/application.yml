@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://spring-boot-postgresql:5432/mydb
+    url: jdbc:postgresql://db:5432/mydb  # 'spring-boot-postgresql' 대신 'db'로 변경
     username: myuser
     password: mypass
     driver-class-name: org.postgresql.Driver
@@ -11,6 +11,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  # ?? ? timezone ??
+  # 시간대 설정
   jackson:
     time-zone: Asia/Seoul
